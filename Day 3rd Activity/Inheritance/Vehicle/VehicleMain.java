@@ -57,14 +57,14 @@ public class VehicleMain {
 	   System.out.println(" Fuel Capacity");
 		  int FuelCapacity= sc.nextInt();
 		  System.out.println("Engine CC");
-		  int Cc=sc.nextInt();
+		  int XX=sc.nextInt();
 		 System.out.println("Audio System");
 		 String AudioSystem=sc.next();
 		 System.out.println("NUmber of Doors");
 		 int NumberOfDoors= sc.nextInt();
 		
 		  
-	  FourWheeler fw= new FourWheeler( Make, VehicleNumber, FuelType, FuelCapacity, Cc,NumberOfDoors,AudioSystem);
+	  FourWheeler fw= new FourWheeler( Make, VehicleNumber, FuelType, FuelCapacity, XX,NumberOfDoors,AudioSystem);
 	  fw.displayMake();
 	  fw.displayBasicInfo();
 	  fw.getNumberOfDoors();

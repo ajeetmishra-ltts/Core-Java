@@ -11,7 +11,7 @@ Scanner sc=new Scanner(System.in);
         ArrayList<String> al= new ArrayList<String>();
 		System.out.println("Enter the Teams");
 	    
-        for(int i=0;i<4;i++)
+        for(int i=0;i<5;i++)
 		{
 			al.add(sc.next());
 		}

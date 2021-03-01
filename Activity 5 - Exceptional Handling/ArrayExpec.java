@@ -1,34 +1,30 @@
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-public class ArrayExpec {
- 
+public class Array2 {
+
 	public static void main(String[] args) {
-		
-		Scanner sc= new Scanner(System.in);
-		
-		try {
-			
-			System.out.println("Enter the no of overs: ");
-	        int nover=sc.nextInt();
-	        
-	        System.out.println("Enter the no of runs in each over: ");
-	        int arr []=new int[nover+1];
-	        
-	        for(int i=1;i<=nover;i++)
-	        {
-	            arr[i]=sc.nextInt();
-	        }
-	        System.out.println("Enter over number: ");
-	        int overn=sc.nextInt();
-	        System.out.println("Runs scored in the over: "+arr[overn]);
-
+		// TODO Auto-generated method stub
+		BufferedReader reader =new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter the number of overs: ");
+		try
+		{
+			int size = Integer.parseInt(reader.readLine());
+			int array[] = new int[size];
+			for(int i=0;i<size;i++)
+			{
+				array[i] = Integer.parseInt(reader.readLine());
+				
+			}
+			System.out.println("Over Number: ");
+			int num = Integer.parseInt(reader.readLine());
+			System.out.println(array[num-1]);
 			
 		}
-		catch(Exception e) {
-			
+		catch(Exception e)
+		{
 			System.out.println(e);
-			
 		}
 	}
-	
+
 }
